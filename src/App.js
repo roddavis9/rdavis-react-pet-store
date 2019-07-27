@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-import Layout from './feature/Layout/Layout';
+import Layout from './components/Layout/Layout';
+import Button from './common/UI/Button/Button';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Layout>
-            test
+            <Button label={`continue`} fill={true} active={true} />
         </Layout>
       </div>
     );
