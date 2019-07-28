@@ -1,0 +1,21 @@
+.slogan {
+    display: inline;
+    font-style: italic;
+}
+
+.SubHeader {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding:15px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #119DD6;
+}
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}
