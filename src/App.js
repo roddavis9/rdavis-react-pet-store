@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Layout from './components/Layout/Layout';
+import Layout from './hoc/Layout/Layout';
 import Button from './common/UI/Button/Button';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <Layout>
-            <Button label={`continue`} fill={true} active={true} />
+
         </Layout>
       </div>
     );
