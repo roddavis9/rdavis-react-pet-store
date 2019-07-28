@@ -1,0 +1,58 @@
+{
+  "cats": [
+    {
+      "_id": "1234567",
+      "breed": "mixed",
+      "sex": "Female",
+      "image": "./images/cat_dyna_female.jpg",
+      "name": "Dyna",
+      "age": "3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "_id": "2234567",
+      "breed": "mixed",
+      "sex": "Female",
+      "image": "./images/cat_bella_female.jpg",
+      "name": "Bella",
+      "age": "5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "_id": "3234567",
+      "breed": "mixed",
+      "sex": "Male",
+      "image": "./images/cat_levi_male.jpg",
+      "name": "Levi",
+      "age": "4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "_id": "4234567",
+      "breed": "mixed",
+      "sex": "Male",
+      "image": "./images/cat_chex_male.jpg",
+      "name": "Chex",
+      "age": "1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "_id": "5234567",
+      "breed": "mixed",
+      "sex": "Male",
+      "image": "./images/cat_wyatt_male.jpg",
+      "name": "Wyatt",
+      "age": "6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "_id": "6234567",
+      "breed": "mixed",
+      "sex": "Female",
+      "image": "./images/cat_gamora_female.jpg",
+      "name": "Gamora",
+      "age": "2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ]
+}
