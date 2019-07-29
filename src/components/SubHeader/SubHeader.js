@@ -12,7 +12,7 @@ const subHeader = (props) => (
     <AuxWrapper style={tempStyle}>
         <div className={classes.SubHeader}>
             <div className={classes.slogan + ' ' + classes.DesktopOnly}>
-                <h5>We have the perfect companion for you and your family!</h5>
+                <span className={classes.slogan}>We have the perfect companion for you and your family!</span>
             </div>
             <div>
                 <CartSummary />

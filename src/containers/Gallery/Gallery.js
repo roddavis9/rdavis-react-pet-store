@@ -38,8 +38,8 @@ class Gallery extends Component {
                 break;
         }
 
-        const catData = this.props.getCatData();
-        console.log('catData', catData);
+        // const catData = this.props.getCatData();
+        // console.log('catData', catData);
 
 
         axios.get(urlPath)
@@ -70,7 +70,7 @@ class Gallery extends Component {
         this.state.displayedItems.map(item => {
             rowContents.push(<div key={item._id} className="col-lg-4 col-md-6 col-sm-12">
                 <Card
-                    key={item.id}
+                    _id={item.id}
                     age={item.age}
                     sex={item.sex}
                     name={item.name}

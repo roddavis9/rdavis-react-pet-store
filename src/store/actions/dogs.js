@@ -5,7 +5,7 @@ export const getDogs = () => {
     return dispatch => {
         axios.get('/dogs/dogs.mockdata.json')
             .then(res => {
-                console.log(res);
+                // console.log(res);
 
                 return {
                     type: actionTypes.GET_DOG,
