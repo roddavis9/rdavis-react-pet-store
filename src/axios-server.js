@@ -1,5 +1,7 @@
 import axios from 'axios';
 
-axios.create({
-
+const instance = axios.create({
+    baseURL: 'http://localhost:3000/mockdata'
 });
+
+export default instance;
