@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Aux from '../../hoc/Aux/Aux';
+import AuxWrapper from '../../hoc/AuxWrapper/AuxWrapper';
 import classes from './Home.module.css';
 
 const Home = (props) => (
-    <Aux>
+    <AuxWrapper>
         <div className={classes.Home}>
             <div>
                 <h2>Welcome to Rod's Pet Emporium</h2>
@@ -13,7 +13,7 @@ const Home = (props) => (
 
             </div>
         </div>
-    </Aux>
+    </AuxWrapper>
 );
 
 export default Home;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aux from '../../hoc/Aux/Aux';
+import AuxWrapper from '../../hoc/AuxWrapper/AuxWrapper';
 import CartSummary from './CartSummary/CartSummary';
 import classes from './SubHeader.module.css';
 
@@ -9,7 +9,7 @@ const tempStyle = {
 };
 
 const subHeader = (props) => (
-    <Aux style={tempStyle}>
+    <AuxWrapper style={tempStyle}>
         <div className={classes.SubHeader}>
             <div className={classes.slogan + ' ' + classes.DesktopOnly}>
                 <h5>We have the perfect companion for you and your family!</h5>
@@ -21,7 +21,7 @@ const subHeader = (props) => (
                 Login
             </div>
         </div>
-    </Aux>
+    </AuxWrapper>
 );
 
 

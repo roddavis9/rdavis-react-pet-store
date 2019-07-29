@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../../../hoc/Aux/Aux';
+import AuxWrapper from '../../../hoc/AuxWrapper/AuxWrapper';
 
 import CardHeader from './CardHeader/CardHeader';
 import CardBody from './CardBody/CardBody';
@@ -9,7 +9,7 @@ import classes from './Card.module.css';
 
 
 const Card = (props) => (
-    <Aux>
+    <AuxWrapper>
         <div className={classes.Card}>
             <div className={classes.CardHeader}>
                 <CardHeader image={props.image}/>
@@ -21,7 +21,7 @@ const Card = (props) => (
                 <CardFooter id={props.key}/>
             </div>
         </div>
-    </Aux>
+    </AuxWrapper>
 );
 
 
