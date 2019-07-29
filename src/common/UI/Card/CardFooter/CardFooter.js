@@ -6,7 +6,7 @@ import classes from './CardFooter.module.css';
 
 const CardFooter = (props) => (
     <div className={classes.CardFooter}>
-        <Button label={"Adopt"} active fill onClick={""} />
+        <Button label={"Adopt"} active fill onClick={console.log(props.id)} />
     </div>
 );
 

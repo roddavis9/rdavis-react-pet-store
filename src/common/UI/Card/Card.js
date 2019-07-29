@@ -12,13 +12,13 @@ const Card = (props) => (
     <Aux>
         <div className={classes.Card}>
             <div className={classes.CardHeader}>
-                <CardHeader image={"cat_bella_female.jpg"}/>
+                <CardHeader image={props.image}/>
             </div>
             <div className={classes.CardBody}>
-                <CardBody name={"Bella"} age={"2"} sex={"Female"} />
+                <CardBody name={props.name} age={props.age} sex={props.sex} />
             </div>
             <div className={classes.CardFooter}>
-                <CardFooter />
+                <CardFooter id={props.key}/>
             </div>
         </div>
     </Aux>

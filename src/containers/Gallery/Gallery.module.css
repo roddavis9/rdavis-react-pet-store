@@ -1,6 +1,17 @@
-.Gallery {
-    display: flex;
-    height: 100%;
-    padding: 20px;
 
+.displaySection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.Gallery {
+    height: 100%;
+    width: 100%;
+}
+
+.SubHeader {
+    width: 100%;
 }
