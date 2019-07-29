@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux/Aux';
 import SubHeader from '../../components/SubHeader/SubHeader';
+import Card from '../../common/UI/Card/Card';
 
 import classes from './Gallery.module.css';
 import Modal from '../../common/UI/Modal/Modal';
@@ -26,7 +27,7 @@ class Gallery extends Component {
                 </div>
 
                 <div className={classes.Gallery}>
-                    image gallery
+                    <Card />
                 </div>
             </Aux>
         )

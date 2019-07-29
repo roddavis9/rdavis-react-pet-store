@@ -4,7 +4,7 @@
       "_id": "1334567",
       "breed": "mixed",
       "sex": "Female",
-      "image": "./images/dog_sadie_female.jpg",
+      "image": "dog_sadie_female.jpg",
       "name": "Sadie",
       "age": "3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -13,7 +13,7 @@
       "_id": "2434567",
       "breed": "mixed",
       "sex": "Male",
-      "image": "./images/dog_leroy_male.jpg",
+      "image": "dog_leroy_male.jpg",
       "name": "Leroy",
       "age": "9",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -22,7 +22,7 @@
       "_id": "3534567",
       "breed": "mixed",
       "sex": "Male",
-      "image": "./images/dog_jenkins_male.jpg",
+      "image": "dog_jenkins_male.jpg",
       "name": "Jenkins",
       "age": "4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -31,7 +31,7 @@
       "_id": "4634567",
       "breed": "mixed",
       "sex": "Male",
-      "image": "./images/dog_kenny_male.jpg",
+      "image": "dog_kenny_male.jpg",
       "name": "Kenny",
       "age": "1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -40,7 +40,7 @@
       "_id": "5734567",
       "breed": "mixed",
       "sex": "Male",
-      "image": "./images/dog_roscoe_male.jpg",
+      "image": "dog_roscoe_male.jpg",
       "name": "Roscoe",
       "age": "6",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
