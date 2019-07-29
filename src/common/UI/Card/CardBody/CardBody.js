@@ -1,11 +1,11 @@
 import React from 'react';
-import Aux from '../../../../hoc/Aux/Aux';
+import AuxWrapper from '../../../../hoc/AuxWrapper/AuxWrapper';
 
 
 import classes from './CardBody.module.css';
 
 const CardBody = (props) => (
-    <Aux>
+    <AuxWrapper>
         <div className={classes.AnimalName}>
             {props.name}
         </div>
@@ -17,7 +17,7 @@ const CardBody = (props) => (
                 Sex:&nbsp;&nbsp;{props.sex}
             </div>
         </div>
-    </Aux>
+    </AuxWrapper>
 );
 
 export default CardBody;
