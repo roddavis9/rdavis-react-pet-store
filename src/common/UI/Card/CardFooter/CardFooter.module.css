@@ -1,0 +1,7 @@
+.CardFooter {
+    padding: 20px;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+.CardHeader {
+    height: 200px;
+}
+
+.animalImage {
+    width: 275px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
