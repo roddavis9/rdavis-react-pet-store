@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Aux from '../../hoc/Aux/Aux';
+import AuxWrapper from '../../hoc/AuxWrapper/AuxWrapper';
 import SubHeader from '../../components/SubHeader/SubHeader';
 import Card from '../../common/UI/Card/Card';
 import axios from '../../axios-server';
@@ -38,6 +38,10 @@ class Gallery extends Component {
                 break;
         }
 
+        // const catData = this.props.getCatData();
+        // console.log('catData', catData);
+
+
         axios.get(urlPath)
             .then(res => {
                // console.log(res);
@@ -64,9 +68,9 @@ class Gallery extends Component {
         let rowContents = [];
 
         this.state.displayedItems.map(item => {
-            rowContents.push(<div key={item._id} className="col-4">
+            rowContents.push(<div key={item._id} className="col-lg-4 col-md-6 col-sm-12">
                 <Card
-                    key={item.id}
+                    _id={item.id}
                     age={item.age}
                     sex={item.sex}
                     name={item.name}
@@ -79,7 +83,7 @@ class Gallery extends Component {
 
 
         return (
-            <Aux>
+            <AuxWrapper>
                 <Modal>
                     <div>
                         show order summary
@@ -93,7 +97,7 @@ class Gallery extends Component {
                         {rowContents}
                     </div>
                 </div>
-            </Aux>
+            </AuxWrapper>
         )
     }
 
@@ -107,6 +111,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
+        getCatData: () => dispatch({type: actionTypes.GET_CATS}),
         onCatAdopted: (catId) => dispatch({type: actionTypes.REMOVE_CAT, _id: catId})
     }
 };

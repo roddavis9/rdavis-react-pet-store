@@ -4,15 +4,20 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider} from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 
-import reducer from './store/reducers/reducer';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import catReducer from './store/reducers/cats';
 
-const store = createStore(reducer);
+const rootReducer = combineReducers({
+       catReducer: catReducer
+});
+
+const store = createStore(rootReducer);
+
+
 
 const app = (
     <Provider store={store}>

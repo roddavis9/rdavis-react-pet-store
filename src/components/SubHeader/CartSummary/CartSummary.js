@@ -1,12 +1,12 @@
 import React from 'react';
-import Aux from '../../../hoc/Aux/Aux';
+import AuxWrapper from '../../../hoc/AuxWrapper/AuxWrapper';
 import FontAwesome from 'react-fontawesome';
 
 import classes from './CartSummary.module.css';
 
 
 const CartSummary = () => (
-    <Aux>
+    <AuxWrapper>
         <div className={classes.CartSummary}>
             <div>
                 <FontAwesome name='fas fa-shopping-cart fa-2x' />
@@ -15,7 +15,7 @@ const CartSummary = () => (
             <div className={classes.itemText}>|&nbsp;&nbsp;$0</div>
 
         </div>
-    </Aux>
+    </AuxWrapper>
 );
 
 export default CartSummary;

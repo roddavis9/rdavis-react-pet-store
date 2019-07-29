@@ -1,7 +1,8 @@
-export const GET_CAT = 'GET_CAT';
+export const GET_CATS = 'GET_CATS';
 export const ADD_CAT = 'ADD_CAT';
 export const REMOVE_CAT = 'REMOVE_CAT';
 
+export const GET_DOG = 'ADD_DOG';
 export const ADD_DOG = 'ADD_DOG';
 export const REMOVE_DOG = 'REMOVE_DOG';
 
