@@ -5,12 +5,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is a sample store that would allow visitors to adopt a pet and/or purchase pet supplies.
 The project is intended to demonstrate some basic knowledge of how to use React and Redux. 
 
-### `Current Release -- 1.0.0`
-
 Libraries/Tech Stack:
 
 React, Redux (partially implemented), React-Router, Bootstrap, Flexbox,
 Axios, Jest, Enzyme, Git-Flow
+
+
+### `Current Release -- 1.5.0`
+
+Release Notes:
+
+1) Integrated project with Redux store
+2) Fixed minor bugs/known issues from release 1.0.0 
+
+
+TODO:
+
+2) Create order summary
+3) Implement cart summary functionality
+3) add onClick action to adopt a pet
+4) create and integrate Supplies feature
+
+
+### `Release -- 1.0.0`
 
 Features:
 
