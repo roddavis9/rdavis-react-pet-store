@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Aux from '../../hoc/Aux/Aux';
+import AuxWrapper from '../../hoc/AuxWrapper/AuxWrapper';
 import SubHeader from '../../components/SubHeader/SubHeader';
 import Card from '../../common/UI/Card/Card';
 import axios from '../../axios-server';
@@ -12,32 +12,36 @@ import Modal from '../../common/UI/Modal/Modal';
 
 
 class Gallery extends Component {
+
     state = {
         currentPrice: 0,
         itemsInCart: 0,
-        displayedItems: [],
+        galleryItems: [],
         loading: true
     };
 
 
     componentDidMount() {
-        let urlPath = '';
+        let galleryItems = [];
 
         switch (this.props.dataType) {
             case 'cats':
-                urlPath = '/cats/cats.mockdata.json';
+                galleryItems = this.props.catData;
                 break;
             case 'dogs':
-                urlPath = '/dogs/dogs.mockdata.json';
+                galleryItems = this.props.dogData;
                 break;
             case 'supplies':
-                urlPath = '/supplies/supplies.mockdata.json';
+
+                // galleryItems = this.props.supplyData;
                 break;
             default:
-                urlPath = '/cats/cats.mockdata.json';
+                galleryItems = this.props.catData;
                 break;
         }
 
+        this.setState({loading: false, galleryItems: galleryItems});
+/*
         axios.get(urlPath)
             .then(res => {
                // console.log(res);
@@ -55,7 +59,7 @@ class Gallery extends Component {
                 this.setState({loading: false});
                 console.log('res error', err);
             })
-
+*/
     }
 
 
@@ -63,10 +67,10 @@ class Gallery extends Component {
     render () {
         let rowContents = [];
 
-        this.state.displayedItems.map(item => {
-            rowContents.push(<div key={item._id} className="col-4">
+            this.state.galleryItems.map(item => {
+            rowContents.push(<div key={item._id} className="col-lg-4 col-md-6 col-sm-12">
                 <Card
-                    key={item.id}
+                    _id={item.id}
                     age={item.age}
                     sex={item.sex}
                     name={item.name}
@@ -79,7 +83,7 @@ class Gallery extends Component {
 
 
         return (
-            <Aux>
+            <AuxWrapper>
                 <Modal>
                     <div>
                         show order summary
@@ -93,20 +97,24 @@ class Gallery extends Component {
                         {rowContents}
                     </div>
                 </div>
-            </Aux>
+            </AuxWrapper>
         )
     }
 
 }
 
 const mapStateToProps = state => {
+    // console.log('state.catData', state);
+
   return {
-      cats: state.cats
+      catData: state.catReducer.catData,
+      dogData: state.dogReducer.dogData
   }
 };
 
 const mapDispatchToProps = dispatch => {
     return {
+        getCatData: () => dispatch({type: actionTypes.GET_CATS}),
         onCatAdopted: (catId) => dispatch({type: actionTypes.REMOVE_CAT, _id: catId})
     }
 };
