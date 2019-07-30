@@ -8,7 +8,7 @@ export const getDogs = () => {
                 // console.log(res);
 
                 return {
-                    type: actionTypes.GET_DOG,
+                    type: actionTypes.GET_DOGS,
                     data: res.data
                 }
 
