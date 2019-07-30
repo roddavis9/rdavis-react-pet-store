@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Aux from '../Aux/Aux';
+import AuxWrapper from '../AuxWrapper/AuxWrapper';
 import classes from './Layout.module.css';
 import Header from '../../components/Header/Header';
 
@@ -23,7 +23,7 @@ class Layout extends Component {
 
     render () {
         return (
-            <Aux>
+            <AuxWrapper>
                 <Header toggleButtonClicked={this.sideDrawerToggleHandler} />
                 <SideDrawer
                     open={this.state.showSideDrawer}
@@ -31,7 +31,7 @@ class Layout extends Component {
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
-            </Aux>
+            </AuxWrapper>
         )
     }
 }

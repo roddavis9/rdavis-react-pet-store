@@ -1,64 +1,54 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    catData: [
+    dogData: [
         {
-            "_id": "1234567",
+            "_id": "1334567",
             "breed": "mixed",
             "sex": "Female",
-            "image": "cat_dyna_female.jpg",
-            "name": "Dyna",
+            "image": "dog_sadie_female.jpg",
+            "name": "Sadie",
             "age": "3",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "available": true
         },
         {
-            "_id": "2234567",
+            "_id": "2434567",
             "breed": "mixed",
-            "sex": "Female",
-            "image": "cat_bella_female.jpg",
-            "name": "Bella",
-            "age": "5",
+            "sex": "Male",
+            "image": "dog_leroy_male.jpg",
+            "name": "Leroy",
+            "age": "9",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "available": true
         },
         {
-            "_id": "3234567",
+            "_id": "3534567",
             "breed": "mixed",
             "sex": "Male",
-            "image": "cat_levi_male.jpg",
-            "name": "Levi",
+            "image": "dog_jenkins_male.jpg",
+            "name": "Jenkins",
             "age": "4",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "available": true
         },
         {
-            "_id": "4234567",
+            "_id": "4634567",
             "breed": "mixed",
             "sex": "Male",
-            "image": "cat_chex_male.jpg",
-            "name": "Chex",
+            "image": "dog_kenny_male.jpg",
+            "name": "Kenny",
             "age": "1",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "available": true
         },
         {
-            "_id": "5234567",
+            "_id": "5734567",
             "breed": "mixed",
             "sex": "Male",
-            "image": "cat_wyatt_male.jpg",
-            "name": "Wyatt",
+            "image": "dog_roscoe_male.jpg",
+            "name": "Roscoe",
             "age": "6",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "available": true
-        },
-        {
-            "_id": "6234567",
-            "breed": "mixed",
-            "sex": "Female",
-            "image": "cat_gamora_female.jpg",
-            "name": "Gamora",
-            "age": "2",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "available": true
         }
@@ -66,19 +56,19 @@ const initialState = {
 
 };
 
-const catReducer = (state = initialState, action) => {
+const dogReducer = (state = initialState, action) => {
     switch(action.type) {
-        case actionTypes.GET_CATS:
+        case actionTypes.GET_DOGS:
             return {
                 ...state,
-                catData: state.catData.concat(state.catData)
+                dogData: state.dogData.concat(state.dogData)
             };
-        case actionTypes.ADD_CAT:
+        case actionTypes.ADD_DOG:
             return {
                 ...state,
                 // displayedItems:
             };
-        case actionTypes.REMOVE_CAT:
+        case actionTypes.REMOVE_DOG:
             return {
                 ...state,
                 // displayedItems:
@@ -89,4 +79,4 @@ const catReducer = (state = initialState, action) => {
 
 };
 
-export default catReducer;
+export default dogReducer;

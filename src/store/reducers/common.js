@@ -2,11 +2,11 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
     currentPrice: 0,
-    itemsInCart: 0,
-    displayedItems: []
+    itemsInCart: 0
+
 };
 
-const reducer = (state = initialState, action) => {
+const commonReducer = (state = initialState, action) => {
     switch(action.type) {
         case actionTypes.ADD_CAT:
             return {
@@ -23,4 +23,4 @@ const reducer = (state = initialState, action) => {
 
 };
 
-export default reducer;
+export default commonReducer;

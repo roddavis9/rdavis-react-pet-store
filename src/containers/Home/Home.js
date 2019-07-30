@@ -1,19 +1,19 @@
 import React from 'react';
 
-import Aux from '../../hoc/Aux/Aux';
+import AuxWrapper from '../../hoc/AuxWrapper/AuxWrapper';
 import classes from './Home.module.css';
 
 const Home = (props) => (
-    <Aux>
+    <AuxWrapper>
         <div className={classes.Home}>
             <div>
                 <h2>Welcome to Rod's Pet Emporium</h2>
             </div>
             <div>
-
+                <h5>Please select a link in the navigation above to find a loving new addition for your home.</h5>
             </div>
         </div>
-    </Aux>
+    </AuxWrapper>
 );
 
 export default Home;
